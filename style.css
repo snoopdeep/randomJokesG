@@ -1,0 +1,49 @@
+.a{
+    background-color: #234E70;
+}
+
+.div1{
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 90vh;
+     /* size of the window */
+     display: flex;
+}
+.inner_div{
+    /* border: 1px solid black; */
+    width: 900px;
+    height: 450px;
+    margin: auto;
+   
+    /* display flex will free elements so we can position them */
+    display: flex;
+
+    /* flex direction- column == they will allign in a coloums */
+    flex-direction: column;
+    /* justify content in center placed items in center  */
+    justify-content: center;
+     /* align item center move to actual center of div; */
+     align-items: center;
+
+     padding: 0 50px;
+     color: #2d363f;
+     background-color:  #FBF8BE;
+     border: 10px solid #2f1e1e;  
+     border-radius: 3%;
+}
+.inner_div p, .inner_div h3{
+    font-size: 1.5rem;
+}
+
+
+.btnclass{
+    text-align: center;
+}
+
+/* for making responsive we use media query */
+/* for 480px or less screen */
+@media(max-width:480px){
+    .inner_div p, .inner_div h3{
+        font-size: 1rem;
+    }
+}
